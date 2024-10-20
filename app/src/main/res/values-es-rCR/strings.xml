@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GreenHabits</string>
+    <string name="View_challenges">Retos</string>
+    <string name="View_Stats">Estadisticas</string>
+    <string name="View_Start">Inicio</string>
+</resources>
