@@ -1,6 +1,6 @@
 package cr.ac.utn.GreenHabits
 
-import Util.Util
+import Util.util
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -27,19 +27,19 @@ class MainActivity : AppCompatActivity() {
         val btnviewchallenges = findViewById<Button>(R.id.btnviewchallenges)
         btnviewchallenges.setOnClickListener(View.OnClickListener { view ->
             val trying = Intent(this, ChallengesActivity::class.java)
-            Util.openActivity(this,ChallengesActivity::class.java)
+            util.openActivity(this,ChallengesActivity::class.java)
         })
 
         val btnviewstats = findViewById<Button>(R.id.btnviewStats)
         btnviewstats.setOnClickListener(View.OnClickListener { view ->
             val trying = Intent(this, StatsActivity::class.java)
-            Util.openActivity(this,StatsActivity::class.java)
+            util.openActivity(this,StatsActivity::class.java)
         })
 
         val btnviewstart = findViewById<Button>(R.id.btnviewstart)
         btnviewstart.setOnClickListener(View.OnClickListener { view ->
             val trying = Intent(this, MainActivity::class.java)
-            Util.openActivity(this,MainActivity::class.java)
+            util.openActivity(this,MainActivity::class.java)
         })
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
