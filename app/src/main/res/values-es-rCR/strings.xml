@@ -38,7 +38,7 @@
     <string name="Cen_array_menu">Servicios</string>
     <string name="Cen_save_service">Guardar servicio</string>
     <string name="Cen_camera">Foto</string>
-    <string name="Cen_take_photo">tomar foto</string>
+    <string name="Cen_take_photo">Lista</string>
     <string name="Cen_take_gallery">Galeria</string>
     <string name="Cen_fout_image">Tomar imagen del a fuente</string>
 

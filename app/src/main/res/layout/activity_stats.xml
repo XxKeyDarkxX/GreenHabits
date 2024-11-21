@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".StatsActivity">
 
+    <!-- TableLayout con los campos de datos -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
+        <!-- TableRow para la imagen y campos de texto -->
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -22,25 +23,6 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 tools:srcCompat="@tools:sample/avatars" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cen_Userid" />
-
-            <EditText
-                android:id="@+id/Cen_txtId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text" />
-
         </TableRow>
 
         <TableRow
@@ -95,7 +77,6 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="phone" />
-
         </TableRow>
 
         <TableRow
@@ -117,4 +98,7 @@
         </TableRow>
 
     </TableLayout>
+
+    <!-- RecyclerView para mostrar la lista de datos -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,11 +24,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnviewchallenges = findViewById<Button>(R.id.btnviewchallenges)
-        btnviewchallenges.setOnClickListener(View.OnClickListener { view ->
-            val trying = Intent(this, ChallengesActivity::class.java)
-            util.openActivity(this,ChallengesActivity::class.java)
-        })
 
         val btnviewstats = findViewById<Button>(R.id.btnviewStats)
         btnviewstats.setOnClickListener(View.OnClickListener { view ->
@@ -41,29 +36,12 @@ class MainActivity : AppCompatActivity() {
             val trying = Intent(this, MainActivity::class.java)
             util.openActivity(this,MainActivity::class.java)
         })
+
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main_menu,menu)
         return true
     }
-/*
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId){
-            R.id.menu_view_challenges ->{
-                Util.openActivity(this,ChallengesActivity::class.java)
-                return true
-            }
 
-            R.id.menu_view_stats ->{
-                Util.openActivity(this,StatsActivity::class.java)
-                return true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-
-    }
-
-
- */
 }

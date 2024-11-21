@@ -6,7 +6,6 @@
     <string name="Green_Not_Found">Not Found</string>
 
 
-
     <string name="Cen_addcensus">add new person</string>
     <string name="Cen_viewcensus">view census list</string>
     <string name="cen_Userid">Contact ID</string>
@@ -35,7 +34,7 @@
     <string name="Cen_array_menu">Service</string>
     <string name="Cen_save_service">Save Service</string>
     <string name="Cen_camera">Photo</string>
-    <string name="Cen_take_photo">photo</string>
+    <string name="Cen_take_photo">List</string>
     <string name="Cen_take_gallery">Gallery</string>
     <string name="Cen_fout_image">Image</string>
 </resources>
