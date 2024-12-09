@@ -4,13 +4,14 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat.startActivity
 
-class Util {
+const val EXTRA_MESSAGE_ID = "cr.ac.utn.appmovil.Id"
 
-    companion object{
-        fun openActivity(context: Context, objClass:Class<*>){
-            val inten = Intent(context, objClass)
-            startActivity(context,inten,null)
+
+class util {
+    companion object  {
+        fun openActivity(context: Context, objclass: Class<*>, extraName: String="", value: String=""){
+            val intent = Intent(context, objclass).apply { putExtra(extraName, value)}
+            startActivity(context, intent, null)
         }
     }
-
 }
